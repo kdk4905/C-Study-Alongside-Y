@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C# Study Alongside Y", "C# Study Alongside Y\C# Study Alongside Y.csproj", "{E9B1C816-3B4B-4150-9008-60EB383E816E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00HelloWorld", "01  HelloWorld\00HelloWorld.csproj", "{2AE8D971-72D6-4E46-A328-A8BB97F18B75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{CD52FC35-DF4E-4EF4-A746-905FAC66BD8F}"
+	ProjectSection(SolutionItems) = preProject
+		00~04.txt = 00~04.txt
+		05~06.txt = 05~06.txt
+		클래스.txt = 클래스.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01HelloCSharpWin", "01HelloCSharpWin\01HelloCSharpWin.csproj", "{DA919B96-EDEC-4920-B395-E164E857E1EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuteCat", "CuteCat\CuteCat.csproj", "{28D33671-4D89-4946-B14B-5A8D8DCB31B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalShelter", "AnimalShelter\AnimalShelter.csproj", "{F21A9A1E-4957-42B9-834B-2A1D2EFBF078}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9B1C816-3B4B-4150-9008-60EB383E816E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B1C816-3B4B-4150-9008-60EB383E816E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B1C816-3B4B-4150-9008-60EB383E816E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B1C816-3B4B-4150-9008-60EB383E816E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE8D971-72D6-4E46-A328-A8BB97F18B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE8D971-72D6-4E46-A328-A8BB97F18B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE8D971-72D6-4E46-A328-A8BB97F18B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE8D971-72D6-4E46-A328-A8BB97F18B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA919B96-EDEC-4920-B395-E164E857E1EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA919B96-EDEC-4920-B395-E164E857E1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA919B96-EDEC-4920-B395-E164E857E1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA919B96-EDEC-4920-B395-E164E857E1EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D33671-4D89-4946-B14B-5A8D8DCB31B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D33671-4D89-4946-B14B-5A8D8DCB31B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D33671-4D89-4946-B14B-5A8D8DCB31B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D33671-4D89-4946-B14B-5A8D8DCB31B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F21A9A1E-4957-42B9-834B-2A1D2EFBF078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21A9A1E-4957-42B9-834B-2A1D2EFBF078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21A9A1E-4957-42B9-834B-2A1D2EFBF078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21A9A1E-4957-42B9-834B-2A1D2EFBF078}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C214938C-7055-4702-9CAB-EC550394FB7B}
+	EndGlobalSection
+EndGlobal
