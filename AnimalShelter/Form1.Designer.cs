@@ -58,6 +58,8 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tooltipmenustripToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label6 = new System.Windows.Forms.Label();
+            this.CusPetInfo = new System.Windows.Forms.Label();
             this.CusDetailPanel.SuspendLayout();
             this.CusNewPanel.SuspendLayout();
             this.CusListPanel.SuspendLayout();
@@ -77,6 +79,8 @@
             // 
             // CusDetailPanel
             // 
+            this.CusDetailPanel.Controls.Add(this.CusPetInfo);
+            this.CusDetailPanel.Controls.Add(this.label6);
             this.CusDetailPanel.Controls.Add(this.CusIsQualified);
             this.CusDetailPanel.Controls.Add(this.lable2);
             this.CusDetailPanel.Controls.Add(this.CusDescription);
@@ -195,7 +199,7 @@
             this.CusNewPanel.Controls.Add(this.label2);
             this.CusNewPanel.Controls.Add(this.label5);
             this.CusNewPanel.Controls.Add(this.label3);
-            this.CusNewPanel.Location = new System.Drawing.Point(406, 27);
+            this.CusNewPanel.Location = new System.Drawing.Point(67, 51);
             this.CusNewPanel.Name = "CusNewPanel";
             this.CusNewPanel.Size = new System.Drawing.Size(394, 414);
             this.CusNewPanel.TabIndex = 2;
@@ -285,6 +289,7 @@
             // CusListPanel
             // 
             this.CusListPanel.Controls.Add(this.CusList);
+            this.CusListPanel.Controls.Add(this.CusNewPanel);
             this.CusListPanel.Location = new System.Drawing.Point(12, 27);
             this.CusListPanel.Name = "CusListPanel";
             this.CusListPanel.Size = new System.Drawing.Size(371, 411);
@@ -340,13 +345,30 @@
             this.tooltipmenustripToolStripMenuItem.Text = "새 입양자";
             this.tooltipmenustripToolStripMenuItem.Click += new System.EventHandler(this.tooltipmenustripToolStripMenuItem_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 129);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(25, 12);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "펫 :";
+            // 
+            // CusPetInfo
+            // 
+            this.CusPetInfo.AutoSize = true;
+            this.CusPetInfo.Location = new System.Drawing.Point(87, 129);
+            this.CusPetInfo.Name = "CusPetInfo";
+            this.CusPetInfo.Size = new System.Drawing.Size(29, 12);
+            this.CusPetInfo.TabIndex = 13;
+            this.CusPetInfo.Text = "이름";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.CusListPanel);
-            this.Controls.Add(this.CusNewPanel);
             this.Controls.Add(this.CusDetailPanel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -398,6 +420,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tooltipmenustripToolStripMenuItem;
+        private System.Windows.Forms.Label CusPetInfo;
+        private System.Windows.Forms.Label label6;
     }
 }
 
