@@ -12,8 +12,7 @@ namespace AnimalShelter
 {
     public partial class Form1 : Form
     {
-        public Customer[] CustomerArray = new Customer[10];
-        public int CustomerArrayIndex = 0;
+        public List<Customer> Customers = new List<Customer>();
         public Form1()
         {
             InitializeComponent();
@@ -21,14 +20,20 @@ namespace AnimalShelter
 
         private void ClickCustomer_Click(object sender, EventArgs e)
         {
-            CustomerArray[CustomerArrayIndex] = new Customer(CusNewFirstName.Text, CusNewLastName.Text,
+            Customer cus = new Customer(CusNewFirstName.Text, CusNewLastName.Text,
                                         DateTime.Parse(CusNewBirthday.Text));
-            CustomerArray[CustomerArrayIndex].Address = CusNewAddress.Text;
-            CustomerArray[CustomerArrayIndex].Description = CusNewDescription.Text;
+            cus.Address = CusNewAddress.Text;
+            cus.Description = CusNewDescription.Text;
 
-            CustomerList.Items.Add(CustomerArray[CustomerArrayIndex].FirstName);
+            CusList.Rows.Add(cus.FirstName, cus.Age, cus.IsQualified);
 
-            CustomerArrayIndex++;
+            Customers.Add(cus);
+
+            CusNewFirstName.Text = "";
+            CusNewLastName.Text = "";
+            CusNewBirthday.Text = "";
+            CusNewAddress.Text = "";
+            CusNewDescription.Text = "";
         }
 
         public void ShowDetails(Customer cus) 
@@ -40,18 +45,34 @@ namespace AnimalShelter
             CusIsQualified.Text = cus.IsQualified.ToString();
         }
 
-        private void CustomerList_Click(object sender, EventArgs e)
+        private void CusList_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string firstName = CustomerList.SelectedItem.ToString();
+            string firstName = (string)CusList.Rows[e.RowIndex].Cells[0].Value;
 
-            for (int index = 0; index < CustomerArrayIndex; index++)
+            foreach (Customer cus in Customers)
             {
-                if (CustomerArray[index].FirstName == firstName)
+                if (cus.FirstName == firstName)
                 {
-                    ShowDetails(CustomerArray[index]);
+                    ShowDetails(cus);
                     break;
                 }
             }
+
+            CusDetailPanel.Show();
+            CusNewPanel.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            CusListPanel.Dock = DockStyle.Fill;
+            CusDetailPanel.Dock = DockStyle.Right;
+            CusNewPanel.Dock = DockStyle.Right;
+        }
+
+        private void tooltipmenustripToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CusNewPanel.Show();
+            CusDetailPanel.Hide();
         }
     }
 }
